@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "Hello world"
 title_separator          : "|"
 name                     : &name "Thalita Drumond"
-description              : &description "PhD candidate within Inria's team Mnemosyne"
-url                      : https://thalitadru.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Personal page"
+url                      : "https://thalitadru.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "thalitadru/thalitadru.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -113,7 +113,7 @@ analytics:
 author:
   name             : "Thalita Drumond"
   avatar           : "images/avatar2.png"
-  bio              : 
+  bio              : "PhD candidate -- Inria's team Mnemosyne"
   location         : "France"
   employer         :
   pubmed           : 
