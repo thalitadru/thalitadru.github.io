@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hi, I'm Thalita !
+title                    : "Hi, I'm Thalita !"
 title_separator          : "-"
 name                     : &name "Thalita Drumond"
 description              : &description "PhD candidate within Inria's team Mnemosyne"
