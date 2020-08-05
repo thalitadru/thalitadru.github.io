@@ -92,10 +92,7 @@ author:
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
-  links:
-    - label: "Gitlab"
-      icon: "fas fa-fw fa-git"
-      url: "https://gitlab.inria.fr/tfirmodr"
+
   codepen          :
   dribbble         :
   flickr           :
@@ -120,7 +117,10 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-
+  links:
+    - label: "Gitlab"
+      icon: "fas fa-fw fa-git"
+      url: "https://gitlab.inria.fr/tfirmodr"
 
 # Reading Files
 include:
