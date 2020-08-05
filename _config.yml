@@ -82,10 +82,10 @@ analytics:
 author:
   name             : "Thalita Drumond"
   avatar           : "avatar2.png"
-  bio              : ""
+  bio              : 
   location         : "France"
   employer         :
-  pubmed           : ""
+  pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=CKiUpv8AAAAJ"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
