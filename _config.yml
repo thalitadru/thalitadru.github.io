@@ -92,6 +92,7 @@ author:
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
+  gitlab           : "https://gitlab.inria.fr/tfirmodr"
   codepen          :
   dribbble         :
   flickr           :
