@@ -8,8 +8,8 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hi, I'm Thalita !"
-title_separator          : "-"
+title                    : "Hello world"
+title_separator          : "|"
 name                     : &name "Thalita Drumond"
 description              : &description "PhD candidate within Inria's team Mnemosyne"
 url                      : https://thalitadru.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -249,7 +249,7 @@ defaults:
 
 # theme + skin
 remote_theme: "mmistakes/minimal-mistakes@4.20.1"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+minimal_mistakes_skin: "dirt" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
 # Sass/SCSS
 sass:
