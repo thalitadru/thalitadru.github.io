@@ -1,4 +1,6 @@
-{% case site.category_archive.type %}
+{% include base_path %}
+
+{% case site.categories.type %}
   {% when "liquid" %}
     {% assign path_type = "#" %}
   {% when "jekyll-archives" %}
