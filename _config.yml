@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hello world"
+title                    : "Thalita Drumond's webpage"
 title_separator          : "|"
 name                     : &name "Thalita Drumond"
-description              : &description "Personal page"
+description              : &description "My personal webpage"
 url                      : "https://thalitadru.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "thalitadru/thalitadru.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : Thalita Drumond # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : false
@@ -103,10 +103,10 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  "false" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : true # true, false (default)
 
 
 # Site Author
@@ -119,7 +119,7 @@ author:
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=CKiUpv8AAAAJ"
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -128,6 +128,7 @@ author:
   facebook         :
   foursquare       :
   github           : "thalitadru"
+  gitlab           : "https://gitlab.inria.fr/tfirmodr"
   google_plus      :
   keybase          :
   instagram        :
@@ -166,8 +167,8 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "Gitlab"
-      icon: "fas fa-fw fa-git"
-      url: "https://gitlab.inria.fr/tfirmodr"
+      icon: "fas fa-fw fa-gitlab"
+      url: ""
 # Site Footer
 footer:
   links:
@@ -271,7 +272,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: false
       share: true
@@ -282,14 +283,14 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
   # _teaching
   - scope:
       path: ""
       type: teaching
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       comments: false
   # _publications
