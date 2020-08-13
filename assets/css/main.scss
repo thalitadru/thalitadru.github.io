@@ -3,6 +3,7 @@
 ---
 
 @charset "utf-8";
-
-@import "minimal-mistakes"; // main partials
+// must delcare skin import before main theme import
+// see https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
