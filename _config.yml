@@ -128,7 +128,7 @@ author:
   facebook         :
   foursquare       :
   github           : "thalitadru"
-  gitlab           : "https://gitlab.inria.fr/tfirmodr"
+  gitlab           : 
   google_plus      :
   keybase          :
   instagram        :
@@ -166,9 +166,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "Gitlab"
-      icon: "fas fa-fw fa-gitlab"
-      #url: ""
+    - label: "Gitlab@Inria"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.inria.fr/tfirmodr"
 # Site Footer
 footer:
   links:
@@ -180,7 +180,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/thalitadru"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
