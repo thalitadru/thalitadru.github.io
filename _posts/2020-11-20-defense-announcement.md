@@ -6,22 +6,25 @@ permalink: /posts/2020/11/defense-announcement/
 tags:
   - news
 ---
+I wil be defending my PhD thesis soon. Here are the details.
 
-**Date:** 03/12/2020 at 13:30
-
-**Link for online streaming:** (https://youtu.be/IzKFvw3CzBw)
-
-**Thesis directors:**
+**Date:** 03/12/2020 at 13:30  
+**Link for online streaming:** https://youtu.be/IzKFvw3CzBw  
+**Language:** English  
+**Thesis supervisors:**
 Frédéric ALEXANDRE and Thierry VIÉVILLE
 
-#### Jury members:
-| CARRÉ, Philippe           | Pr.      | Univ. de Poitiers                           | Reviewer |  
-| ESCOBAR, Maria Jose       | Asc. Pr. |  Univ. Técnica Federico Santa María, Chile  | Reviewer |  
-| SAUZÉON, Helène           | Pr.      | Univ. de Bordeaux                           | Examiner |  
-| JOUFFRAIS, Christophe     | DR       | CNRS IPAL IRL2955, Singapour                | Examiner |  
-| VON ZUBEN, Fernando José  | Full Pr. | Univ. estadual de Campinas, Brazil          | Examiner |  
+| Jury members             |          |                                           |          |
+|--------------------------|----------|-------------------------------------------|----------|
+| CARRÉ, Philippe          | Pr.      | Univ. de Poitiers                         | Reviewer |
+| ESCOBAR, Maria Jose      | Asc. Pr. | Univ. Técnica Federico Santa María, Chile | Reviewer |
+| JOUFFRAIS, Christophe    | DR       | CNRS IPAL IRL2955, Singapour              | Examiner |
+| SAUZÉON, Helène          | Pr.      | Univ. de Bordeaux                         | Examiner |
+| VON ZUBEN, Fernando José | Full Pr. | Univ. estadual de Campinas, Brazil        | Examiner |
 
-Details in french [further bellow](#fr)
+You can see title and abstract bellow - in [english](#en) and in [french](fr).
+
+You can also check popularized short abstracts by the [end of the post](#pop).
 
 ### Details in english {#en}
 
@@ -73,22 +76,6 @@ deep learning, image classification, small data learning, convolutional neural n
 transfer learning.
 
 
-#### Popularized abstract
-
-The field of artificial intelligence has made many advances in the last
-decade, especially with deep learning for image recognition. Despite being biologically inspired, these
-deep neural networks function in a quite different way from our natural vision. Essentially, it is a
-mathematical object with numerical parameters that can be adjusted automatically, using large sets of
-previously labeled images. Only after “seeing” thousands of cats, dogs, cars, trees, people, etc., will the
-network be able to recognize these elements in new images (without understanding their meaning).
-Having access to large databases of labeled images is unfortunately not possible in all fields of
-application. On specific industrial problems or in medical imaging for example, it can be difficult or
-even impossible to obtain hundreds of different images of the same condition, patient, etc... In addition,
-image labeling is more expensive since it requires an expert opinion.
-This motivates the central question of this thesis: How can we take advantage of deep neural
-networks on small image datasets? This work moves a step towards this answer through an extensive
-literature review, complemented by an experimental study including the proposition of original models
-and mechanisms.
 
 ### Details in french {#fr}
 
@@ -141,8 +128,26 @@ c’est-à-dire à la tâche perceptive à accomplir.
 apprentissage profond, catégorisation d’images, apprentissage sur petit corpus de données,
 réseaux de neurones convolutifs, apprentissage par transfert.
 
+### Short popularized abstracts {#pop}
 
-#### Resumé vulgarisé
+#### Popularized abstract in english
+
+The field of artificial intelligence has made many advances in the last
+decade, especially with deep learning for image recognition. Despite being biologically inspired, these
+deep neural networks function in a quite different way from our natural vision. Essentially, it is a
+mathematical object with numerical parameters that can be adjusted automatically, using large sets of
+previously labeled images. Only after “seeing” thousands of cats, dogs, cars, trees, people, etc., will the
+network be able to recognize these elements in new images (without understanding their meaning).
+Having access to large databases of labeled images is unfortunately not possible in all fields of
+application. On specific industrial problems or in medical imaging for example, it can be difficult or
+even impossible to obtain hundreds of different images of the same condition, patient, etc... In addition,
+image labeling is more expensive since it requires an expert opinion.
+This motivates the central question of this thesis: How can we take advantage of deep neural
+networks on small image datasets? This work moves a step towards this answer through an extensive
+literature review, complemented by an experimental study including the proposition of original models
+and mechanisms.
+
+#### Resumé vulgarisé en français
 Le domaine de l’intelligence artificielle a connu diverses avancées
 dans la dernière décennie, en particulier avec le “deep learning” pour la reconnaissance d’images.
 Malgré une inspiration biologique, ces réseaux neuronaux profonds ont finalement un fonctionnement
@@ -160,4 +165,3 @@ réseaux de neurones profonds sur de petits corpus d’images ? Ce travail fait 
 via une étude bibliographique étendue, complémenté par une étude expérimentale comprenant des
 propositions de modèles et mécanismes originaux.
 
-------
