@@ -9,7 +9,7 @@ tags:
 I wil be defending my PhD thesis soon. Here are the details.
 
 **Date:** 03/12/2020 at 13:30  
-**Link for online streaming:** https://youtu.be/IzKFvw3CzBw  
+**Link for online streaming:** (https://youtu.be/IzKFvw3CzBw)
 **Language:** English  
 **Thesis supervisors:**
 Frédéric ALEXANDRE and Thierry VIÉVILLE
