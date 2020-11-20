@@ -6,7 +6,11 @@ permalink: /posts/2020/11/defense-announcement/
 tags:
   - news
 ---
-I wil be defending my PhD thesis soon. Here are the details.
+I wil be defending my PhD thesis soon. Here is some practical info.
+
+You can see title and abstract bellow (in [english](#en) and in [french](fr)) as well as the related [publications](#pub).
+
+You can also check popularized short abstracts by the [end of the post](#pop).
 
 **Date:** 03/12/2020 at 13:30  
 **Link for online streaming:** (https://youtu.be/IzKFvw3CzBw)
@@ -22,9 +26,12 @@ Frédéric ALEXANDRE and Thierry VIÉVILLE
 | SAUZÉON, Helène          | Pr.      | Univ. de Bordeaux                         | Examiner |
 | VON ZUBEN, Fernando José | Full Pr. | Univ. estadual de Campinas, Brazil        | Examiner |
 
-You can see title and abstract bellow - in [english](#en) and in [french](fr).
 
-You can also check popularized short abstracts by the [end of the post](#pop).
+
+### Related publications {#pub}
+- Drumond TF, Viéville T and Alexandre F (2019) _Bio-inspired Analysis of Deep Learning on Not-So-Big Data Using Data-Prototypes._ Front. Comput. Neurosci. 12:100. doi: [10.3389/fncom.2018.00100](https://www.frontiersin.org/articles/10.3389/fncom.2018.00100/full)
+
+- Drumond TF, Viéville T and Alexandre F (2017) _Using prototypes to improve convolutionalnetworks interpretability._  NIPS 2017 - 31st Annual Conference on Neural Information Processing Systems: Transparent and interpretable machine learning in safety critical environments Workshop,Dec 2017, Long Beach, United States. [hal-01651964](https://hal.inria.fr/hal-01651964)
 
 ### Details in english {#en}
 
