@@ -159,4 +159,4 @@ réseaux de neurones profonds sur de petits corpus d’images ? Ce travail fait 
 via une étude bibliographique étendue, complémenté par une étude expérimentale comprenant des
 propositions de modèles et mécanismes originaux.
 
----
+------
