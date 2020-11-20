@@ -9,8 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-* [One page CV (in english)](files/CV_single_page.pdf)
-* [CV détaillé (en français)](file/CV_FR.pdf)
+* [One page CV (in english)](files/CV_EN_single.pdf)
+* [CV détaillé (en français)](files/CV_FR.pdf)
 
 Education
 ======
