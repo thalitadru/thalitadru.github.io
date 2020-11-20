@@ -166,7 +166,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "Gitlab@Inria"
+    - label: "Gitlab @Inria"
       icon: "fab fa-fw fa-gitlab"
       url: "https://gitlab.inria.fr/tfirmodr"
 # Site Footer
@@ -262,6 +262,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  posts:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -291,7 +294,7 @@ defaults:
     values:
       layout: single
       author_profile: false
-      share: true
+      share: false
       comments: false
   # _publications
   - scope:
@@ -300,7 +303,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: false
   # _portfolio
   - scope:
@@ -309,7 +312,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comment: true
   # _talks
   - scope:
@@ -318,7 +321,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
 
 # Sass/SCSS
 sass:
