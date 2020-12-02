@@ -13,7 +13,7 @@ You can see title and abstract bellow (in [english](#en) and in [french](fr)) as
 You can also check popularized short abstracts by the [end of the post](#pop).
 
 **Date:** 03/12/2020 at 13:30  
-**Link for online streaming:** (https://youtu.be/IzKFvw3CzBw)
+**Link for online streaming:** <https://youtu.be/IzKFvw3CzBw>
 **Language:** English  
 **Thesis supervisors:**
 Frédéric ALEXANDRE and Thierry VIÉVILLE
@@ -21,7 +21,7 @@ Frédéric ALEXANDRE and Thierry VIÉVILLE
 | Jury members             |          |                                           |          |
 |--------------------------|----------|-------------------------------------------|----------|
 | CARRÉ, Philippe          | Pr.      | Univ. de Poitiers                         | Reviewer |
-| ESCOBAR, Maria Jose      | Asc. Pr. | Univ. Técnica Federico Santa María, Chile | Reviewer |
+| ESCOBAR, María José      | Asc. Pr. | Univ. Técnica Federico Santa María, Chile | Reviewer |
 | JOUFFRAIS, Christophe    | DR       | CNRS IPAL IRL2955, Singapour              | Examiner |
 | SAUZÉON, Helène          | Pr.      | Univ. de Bordeaux                         | Examiner |
 | VON ZUBEN, Fernando José | Full Pr. | Univ. estadual de Campinas, Brazil        | Examiner |
