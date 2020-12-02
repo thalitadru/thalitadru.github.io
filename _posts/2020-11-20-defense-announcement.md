@@ -6,7 +6,7 @@ permalink: /posts/2020/11/defense-announcement/
 tags:
   - news
 ---
-I wil be defending my PhD thesis soon. Here is some practical info.
+I will be defending my PhD thesis soon. Here is some practical info.
 
 You can see title and abstract bellow (in [english](#en) and in [french](fr)) as well as the related [publications](#pub).
 
