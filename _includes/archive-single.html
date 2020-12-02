@@ -34,8 +34,6 @@
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' %}
       <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% elsif post.date %}
-      {% include page__date.html type=include.type %}    
     {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}

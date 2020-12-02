@@ -1,4 +1,5 @@
 ---
+layout: home
 permalink: /
 title: "Hello"
 excerpt: "About me"
@@ -8,4 +9,4 @@ redirect_from:
   - /about.html
 ---
 
-This is my personal webpage. It is still under construction :)
+This is my personal webpage. It is still under construction <span><i class="fas fa-fw fa-smile"></i></span>
