@@ -17,10 +17,7 @@ redirect_from:
 __Jan - Jun 2020__, __Attaché Temporaire d'Enseignement et Recherche (ATER)__, _Université de Bordeaux, France_  
 96h of teaching for computer science students (L1). Courses: Array algorithms, Intro to databases and web programming. Continuation of PhD research project.
 
-__2016 - 2019__, __PhD research project__, _INRIA Bordeaux Sud-ouest, France_  
-Working on improving data-efficiency of deep learning models in computer vision taking inspirations from the visual cortex. Engaged in science outreach activities. Advisors: Dr. Frederic Alexandre and Dr. Thierry Vieville.
-
-__2017, 2018__, __Teaching assistant__, _Université de Bordeaux, France_
+__2017, 2018__, __Doctorant Vactaire__, _Université de Bordeaux, France_
  - Lab sessions and excercises: Intro to algorithms and programing (40h), Intro to computer networks (20h). 
  - Lectures on artificial neural networks and deep learning for Cognitive Science MSc.(3h, 6h)
 

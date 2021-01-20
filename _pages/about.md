@@ -9,4 +9,4 @@ redirect_from:
   - /about.html
 ---
 
-This is my personal webpage. It is still under construction <span><i class="fas fa-fw fa-smile"></i></span>
+Welcome to my personal webpage. It is still under construction <span><i class="fas fa-fw fa-smile"></i></span>

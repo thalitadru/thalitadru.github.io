@@ -113,12 +113,12 @@ analytics:
 author:
   name             : "Thalita Drumond"
   avatar           : "images/avatar2.png"
-  bio              : "PhD candidate -- Inria's team Mnemosyne"
+  bio              : "PhD in computer science"
   location         : "France"
-  employer         :
+  employer         : "In collaboration with Inria's team Mnemosyne"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=CKiUpv8AAAAJ"
-  email            :
+  email            : 
   researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
