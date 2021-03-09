@@ -29,7 +29,7 @@ publist = {
     "proceeding": {
         "file" : "pubs.bib",
         "venuekey": "booktitle",
-        "venue-pretext": "in ",
+        "venue-pretext": "In ",
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
         
@@ -37,14 +37,14 @@ publist = {
      "journal":{
         "file": "pubs.bib",
         "venuekey" : "journal",
-        "venue-pretext" : "in ",
+        "venue-pretext" : "In",
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
     },
      "misc":{
         "file": "pubs.bib",
         "venuekey" : "institution",
-        "venue-pretext" : "as tech repport at ",
+        "venue-pretext" : "Technical repport at ",
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
     } 
@@ -74,7 +74,8 @@ for pubsource in publist:
         pub_month = "01"
         pub_day = "01"
         
-        b = bibdata.entries[bib_id].fields
+        b = bibdata.entries[bib_id].fields    
+            
         
         try:
             pub_year = f'{b["year"]}'
@@ -144,19 +145,38 @@ for pubsource in publist:
                     md += "\npaperurl: '" + b["url"] + "'"
                     url = True
 
+            slides = False
+            if "slides" in b.keys():
+                if len(str(b["slides"])) > 5:
+                    md += "\nslides: '" + b["slides"] + "'"
+                    slides = True
+
+            code = False
+            if "code" in b.keys():
+                if len(str(b["code"])) > 5:
+                    md += "\ncode: '" + b["code"] + "'"
+                    code = True
+            md += "\nexcerpt: ' '"
+
             md += "\ncitation: '" + html_escape(citation) + "'"
 
             md += "\n---"
-
             
             ## Markdown description for individual page
             if note:
                 md += "\n" + html_escape(b["note"]) + "\n"
 
             if url:
-                md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
+                md += "\n[<span><i class=\"fas fa-fw fa-file-pdf\"></i></span> Paper](" + b["url"] + "){:target=\"_blank\"} " 
             else:
                 md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
+            
+            if slides:
+                md += "\n[<span><i class=\"fas fa-fw fa-file-powerpoint\"></i></span> Presentation slides](" + b["slides"] + "){:target=\"_blank\"}"
+            if code:
+                md += "\n[<span><i class=\"fas fa-fw fa-file-code\"></i></span> Code](" + b["code"] + "){:target=\"_blank\"}"
+            
+            md += "\n"
 
             md_filename = os.path.basename(md_filename)
 
