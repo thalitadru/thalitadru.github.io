@@ -319,7 +319,7 @@ defaults:
       classes: wide
       author_profile: true
       share: false
-      comment: true
+      comment: false
   # _talks
   - scope:
       path: ""
