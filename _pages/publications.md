@@ -14,6 +14,25 @@ You can find my articles on <u><a href="https://scholar.google.com/citations?use
 
 
 {% include base_path %}
+
+## Journal articles
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% if post.venuetype == 'journal' %}
+    {% include archive-single.html %}
+  {% endif%}
 {% endfor %}
+
+## Conference papers
+{% for post in site.publications reversed %}
+  {% if post.venuetype == 'proceeding' %}
+    {% include archive-single.html %}
+  {% endif%}
+{% endfor %}
+
+## Other publications
+{% for post in site.publications reversed %}
+  {% if post.venuetype == 'misc' %}
+    {% include archive-single.html %}
+  {% endif%}
+{% endfor %}
+
