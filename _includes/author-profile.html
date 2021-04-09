@@ -37,21 +37,6 @@
         </li>
       {% endif %}
 
-      {% if author.links %}
-        {% for link in author.links %}
-          {% if link.label and link.url %}
-            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-
-      {% if author.uri %}
-        <li>
-          <a href="{{ author.uri }}" itemprop="url">
-            <i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span>
-          </a>
-        </li>
-      {% endif %}
 
       {% if author.email %}
         <li>
@@ -62,12 +47,71 @@
         </li>
       {% endif %}
 
-      {% if author.keybase %}
+      {% if author.uri %}
         <li>
-          <a href="https://keybase.io/{{ author.keybase }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fas fa-fw fa-key" aria-hidden="true"></i><span class="label">Keybase</span>
+          <a href="{{ author.uri }}" itemprop="url">
+            <i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span>
           </a>
         </li>
+      {% endif %}
+
+      {% if author.googlescholar %}
+      <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      {% endif %}
+      {% if author.pubmed %}
+      <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
+      {% endif %}
+      {% if author.orcid %}
+      <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+      {% endif %}
+
+
+      {% if author.bitbucket %}
+        <li>
+          <a href="https://bitbucket.org/{{ author.bitbucket }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i><span class="label">Bitbucket</span>
+          </a>
+        </li>
+      {% endif %}
+
+      {% if author.github %}
+        <li>
+          <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
+          </a>
+        </li>
+      {% endif %}
+
+      {% if author.gitlab %}
+        <li>
+          <a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-gitlab" aria-hidden="true"></i><span class="label">GitLab</span>
+          </a>
+        </li>
+      {% endif %}
+
+      {% if author.stackoverflow %}
+        <li>
+          <a href="https://stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i><span class="label">Stack Overflow</span>
+          </a>
+        </li>
+      {% endif %}
+
+      {% if author.impactstory %}
+      <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i> Impactstory</a></li>
+      {% endif %}
+
+      {% if author.wikipedia %}
+      <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
+      {% endif %}
+
+      {% if author.keybase %}
+          <li>
+            <a href="https://keybase.io/{{ author.keybase }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+              <i class="fas fa-fw fa-key" aria-hidden="true"></i><span class="label">Keybase</span>
+            </a>
+          </li>
       {% endif %}
 
       {% if author.twitter %}
@@ -118,37 +162,6 @@
         </li>
       {% endif %}
 
-      {% if author.bitbucket %}
-        <li>
-          <a href="https://bitbucket.org/{{ author.bitbucket }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i><span class="label">Bitbucket</span>
-          </a>
-        </li>
-      {% endif %}
-
-      {% if author.github %}
-        <li>
-          <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
-          </a>
-        </li>
-      {% endif %}
-
-      {% if author.gitlab %}
-        <li>
-          <a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-gitlab" aria-hidden="true"></i><span class="label">GitLab</span>
-          </a>
-        </li>
-      {% endif %}
-
-      {% if author.stackoverflow %}
-        <li>
-          <a href="https://stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i><span class="label">Stack Overflow</span>
-          </a>
-        </li>
-      {% endif %}
 
       {% if author.lastfm %}
         <li>
@@ -246,7 +259,13 @@
         </li>
       {% endif %}
 
-      {% include author-profile-custom-links.html %}
+      {% if author.links %}
+      {% for link in author.links %}
+        {% if link.label and link.url %}
+          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
     </ul>
   </div>
 </div>
