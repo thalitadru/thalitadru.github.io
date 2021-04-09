@@ -55,24 +55,17 @@
         </li>
       {% endif %}
 
-      {% if author.googlescholar %}
-      <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
-      {% endif %}
-      {% if author.pubmed %}
-      <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
-      {% endif %}
-      {% if author.orcid %}
-      <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
-      {% endif %}
+      <!-- Professional networks -->
 
-
-      {% if author.bitbucket %}
+      {% if author.linkedin %}
         <li>
-          <a href="https://bitbucket.org/{{ author.bitbucket }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i><span class="label">Bitbucket</span>
+          <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span>
           </a>
         </li>
       {% endif %}
+
+      <!-- Code repo links -->
 
       {% if author.github %}
         <li>
@@ -90,6 +83,14 @@
         </li>
       {% endif %}
 
+      {% if author.bitbucket %}
+      <li>
+        <a href="https://bitbucket.org/{{ author.bitbucket }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i><span class="label">Bitbucket</span>
+        </a>
+      </li>
+    {% endif %}
+
       {% if author.stackoverflow %}
         <li>
           <a href="https://stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
@@ -97,6 +98,19 @@
           </a>
         </li>
       {% endif %}
+
+      <!-- Scientific related links  -->
+      {% if author.googlescholar %}
+      <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      {% endif %}
+      {% if author.pubmed %}
+      <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
+      {% endif %}
+      {% if author.orcid %}
+      <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+      {% endif %}
+
+      <!-- Other social links -->
 
       {% if author.impactstory %}
       <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i> Impactstory</a></li>
@@ -126,14 +140,6 @@
         <li>
           <a href="https://www.facebook.com/{{ author.facebook }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span>
-          </a>
-        </li>
-      {% endif %}
-
-      {% if author.linkedin %}
-        <li>
-          <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span>
           </a>
         </li>
       {% endif %}
@@ -258,6 +264,8 @@
           </a>
         </li>
       {% endif %}
+
+      <!-- Custom links entered manually in _config.yml (from minimal mistakes plain template) -->
 
       {% if author.links %}
       {% for link in author.links %}
