@@ -3,15 +3,15 @@ layout: archive
 ---
 
 {{ content }}
-{% for post in posts %}
-  <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-  {% break %}
-{% endfor %}
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
 {% else %}
   {% assign posts = site.posts %}
+{% endif %}
+
+{% if posts %}
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
