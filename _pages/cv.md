@@ -10,10 +10,16 @@ redirect_from:
 
 <!-- {% include base_path %} -->
 
+You can get one of my single-page CVs bellow:
+
 * [CV en une page (en français)](/files/cv_une_page_fr.pdf)
 * [One page CV (in english)](/files/CV_EN_single.pdf)
 
-### Teaching experience
+Or you can check my [linkedin profile](https://www.linkedin.com/in/{{site.author.linkedin }}).
+
+Other than that, here goes a list of the activities I have registered here in this humble internet home.
+
+<!-- ### Teaching experience
 __Jan - Jun 2020__, __Attaché Temporaire d'Enseignement et Recherche (ATER)__, _Université de Bordeaux, France_  
 96h of teaching for computer science students (L1). Courses: Array algorithms, Intro to databases and web programming. Continuation of PhD research project.
 
@@ -38,33 +44,33 @@ Supervisor: Dr. Caaliph Andriamisaina.
 
 
 __2009 - 2010__, __Undergrad research project__, _FAPESP scholarship, Unicamp_
-Study and implementation of color and shape descriptors for content-based image retrieval systems. Basic experience with image processing, C++ and Qt GUI API. Supervisor: Prof. Dr. Léo Pini Magalhães.
+Study and implementation of color and shape descriptors for content-based image retrieval systems. Basic experience with image processing, C++ and Qt GUI API. Supervisor: Prof. Dr. Léo Pini Magalhães. -->
 
-### Degrees
-* PhD in Computer Science (*Informatique*), University of Bordeaux, France, 2020 (expected)
+## Degrees
+* PhD in Computer Science (*Informatique*), University of Bordeaux, France, 2020
 * MSc in Electrical Engineering, Sub-field Computer Engineering, Unicamp, Brazil, 2016
 * BSc in Electrical Engineering, University of Campinas (Unicamp), Brazil, 2014
 * *Diplôme d'ingenieur* (~MEng), Télécom Paristech, France, 2013
 
 
 
-
-<!--
-Publications
-======
-   <ul>{% for post in site.publications %}
+## Projects
+  <ul>{% for post in site.projects %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul> 
 
-Teaching
-======
+## Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>  
 
-Talks
-======
+## Publications
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul> 
+
+## Talks
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
--->
+
