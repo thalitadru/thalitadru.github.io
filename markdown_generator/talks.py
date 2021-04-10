@@ -90,11 +90,7 @@ for row, item in talks.iterrows():
         md += 'location: "' + str(item.location) + '"\n'
            
     md += "---\n"
-    
-    
-    if len(str(item.talk_url)) > 3:
-        md += "\n[More information here](" + item.talk_url + ")\n" 
-        
+      
     
     if len(str(item.description)) > 3:
         description = html_escape(item.description)
@@ -106,7 +102,9 @@ for row, item in talks.iterrows():
         description = description.replace("  ","  \n")
         md += "\n" + description + "\n"
         
-        
+    if len(str(item.talk_url)) > 3:
+        md += "\n[More information here](" + item.talk_url + ")\n" 
+
     md_filename = os.path.basename(md_filename)
     print(md)
     
