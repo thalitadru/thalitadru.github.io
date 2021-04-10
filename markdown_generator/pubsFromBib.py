@@ -54,8 +54,14 @@ publist = {
         "venue-pretext" : "At ",
         "collection" : {"name":"publications",
                         "permalink":"/publications/"}
-    } 
- 
+    },
+    "thesis":{
+        "file": "pubs.bib",
+        "venuekey": "school",
+        "venue-pretext" : "At ",
+        "collection" : {"name":"publications",
+                        "permalink":"/publications/"}
+    }
 
 }
 

@@ -34,7 +34,7 @@ import os
 # In[3]:
 
 talks = pd.read_csv("talks.tsv", sep="\t", header=0)
-talks
+print(talks)
 
 
 # ## Escape special characters
@@ -97,11 +97,18 @@ for row, item in talks.iterrows():
         
     
     if len(str(item.description)) > 3:
-        md += "\n" + html_escape(item.description) + "\n"
+        description = html_escape(item.description)
+        # workaround for inline line-breaks: 
+        # double space for linebreak, triple for par break
+        # replace any triples with triple + \n (extra \n)
+        # replace double spaces with double space + \n 
+        description = description.replace("   ","\n\n")
+        description = description.replace("  ","  \n")
+        md += "\n" + description + "\n"
         
         
     md_filename = os.path.basename(md_filename)
-    #print(md)
+    print(md)
     
     with open("../_talks/" + md_filename, 'w') as f:
         f.write(md)
