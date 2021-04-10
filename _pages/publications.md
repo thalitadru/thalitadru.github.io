@@ -29,6 +29,20 @@ You can find my articles on <u><a href="https://scholar.google.com/citations?use
   {% endif%}
 {% endfor %}
 
+## Masters and PhD thesis
+{% for post in site.publications reversed %}
+  {% if post.venuetype == 'thesis' %}
+    {% include archive-single.html %}
+  {% endif%}
+{% endfor %}
+
+## Scientific and technical reports
+{% for post in site.publications reversed %}
+  {% if post.venuetype == 'repport' %}
+    {% include archive-single.html %}
+  {% endif%}
+{% endfor %}
+
 ## Other publications
 {% for post in site.publications reversed %}
   {% if post.venuetype == 'misc' %}

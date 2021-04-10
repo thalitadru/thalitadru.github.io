@@ -42,18 +42,18 @@
       <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation %}
+    <!-- {% if post.citation %}
       <p>Citation: {{ post.citation }} </p>
-    {% endif %}
+    {% endif %} -->
     <p>
       {% if post.paperurl %}
-      <a href=" {{ post.paperurl }} "><span><i class="fas fa-fw fa-file-pdf"></i></span> Paper</a>
+      <a href=" {{ post.paperurl }} "><span><i class="fas fa-fw fa-file-pdf"></i> </span>Paper</a>
       {% endif %}
       {% if post.slides %}
-      <a href=" {{ post.slides }} "><span><i class="fas fa-fw fa-file-powerpoint"></i></span> Presentation slides</a>
+      <a href=" {{ post.slides }} "><span><i class="fas fa-fw fa-file-powerpoint"></i> </span>Presentation slides</a>
       {% endif %}
       {% if post.code %}
-      <a href=" {{ post.code }} "><span><i class="fas fa-fw fa-file-code"></i></span> Code</a>
+      <a href=" {{ post.code }} "><span><i class="fas fa-fw fa-file-code"></i> </span>Code</a>
       {% endif %}
     </p>
 

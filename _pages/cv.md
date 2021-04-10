@@ -10,8 +10,8 @@ redirect_from:
 
 <!-- {% include base_path %} -->
 
-* [One page CV (in english)](/files/CV_EN_single.pdf)
 * [CV en une page (en français)](/files/cv_une_page_fr.pdf)
+* [One page CV (in english)](/files/CV_EN_single.pdf)
 
 ### Teaching experience
 __Jan - Jun 2020__, __Attaché Temporaire d'Enseignement et Recherche (ATER)__, _Université de Bordeaux, France_  

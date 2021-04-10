@@ -23,6 +23,7 @@ description              : &description "My personal webpage"
 url                      : "https://thalitadru.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "thalitadru/thalitadru.github.io"
+attachments             : "https://www.dropbox.com/sh/agsnlj1edaorb34/AACRXWwH2tC1juz5hd39xPGUa?preview="
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : Thalita Drumond # overrides the website title displayed in the masthead, use " " for no title
