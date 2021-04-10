@@ -27,7 +27,7 @@ attachments              : "https://www.dropbox.com/sh/agsnlj1edaorb34/AACRXWwH2
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : Thalita Drumond # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
 future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
@@ -390,6 +390,7 @@ defaults:
     values:
       layout: single
       classes: wide
+      show_date: true
       author_profile: false
       share: false
       comment: false

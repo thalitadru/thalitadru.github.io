@@ -36,26 +36,28 @@
       <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% endif %}
 
+
     {% if post.excerpt and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
-    
+
+    <p class="archive__item-excerpt" itemprop="description">
+    {% if post.paperurl %}
+      <a href=" {{ post.paperurl }} "><span><i class="fas fa-fw fa-file-pdf"></i> </span>Paper</a>
+    {% endif %}
+    {% if post.slides %}
+      <a href=" {{ post.slides }} "><span><i class="fas fa-fw fa-file-powerpoint"></i> </span>Presentation slides</a>
+    {% endif %}
+    {% if post.code %}
+      <a href=" {{ post.code }} "><span><i class="fas fa-fw fa-file-code"></i> </span>Code</a>
+    {% endif %}
+    </p>
+
     <!-- {% if post.citation %}
       <p>Citation: {{ post.citation }} </p>
     {% endif %} -->
-    <p>
-      {% if post.paperurl %}
-      <a href=" {{ post.paperurl }} "><span><i class="fas fa-fw fa-file-pdf"></i> </span>Paper</a>
-      {% endif %}
-      {% if post.slides %}
-      <a href=" {{ post.slides }} "><span><i class="fas fa-fw fa-file-powerpoint"></i> </span>Presentation slides</a>
-      {% endif %}
-      {% if post.code %}
-      <a href=" {{ post.code }} "><span><i class="fas fa-fw fa-file-code"></i> </span>Code</a>
-      {% endif %}
-    </p>
 
   </article>
 </div>
