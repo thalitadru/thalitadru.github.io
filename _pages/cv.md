@@ -55,22 +55,22 @@ Study and implementation of color and shape descriptors for content-based image 
 
 
 ## Projects
-  <ul>{% for post in site.projects %}
+  <ul>{% for post in site.projects reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul> 
 
 ## Teaching
-  <ul>{% for post in site.teaching %}
+  <ul>{% for post in site.teaching reversed%}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>  
 
 ## Publications
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed%}
     {% include archive-single-cv.html %}
   {% endfor %}</ul> 
 
 ## Talks
-  <ul>{% for post in site.talks %}
+  <ul>{% for post in site.talks reversed%}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
 
