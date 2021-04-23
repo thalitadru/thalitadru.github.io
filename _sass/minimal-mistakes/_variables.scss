@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 16 !default;
+$doc-font-size: 14px !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
@@ -33,6 +33,12 @@ $global-font-family: $sans-serif !default;
 $header-font-family: $sans-serif !default;
 $caption-font-family: $serif !default;
 
+/* base sizes for _reset html*/
+$font-size-normal: $doc-font-size !default; // originaly 16px
+$font-size-medium: 1.125 * $font-size-normal !default; // originaly 18px
+$font-size-large: 1.25 * $font-size-normal !default; // originaly 20px
+$font-size-x-large: 1.375 * $font-size-normal !default; // originaly 22px
+
 /* type scale */
 $type-size-1: 2.441em !default; // ~39.056px
 $type-size-2: 1.953em !default; // ~31.248px
@@ -44,12 +50,86 @@ $type-size-7: 0.6875em !default; // ~11px
 $type-size-8: 0.625em !default; // ~10px
 
 /* headline scale */
-$h-size-1: 1.563em !default; // ~25.008px
+$h-size-1: 1.375em !default;
 $h-size-2: 1.25em !default; // ~20px
 $h-size-3: 1.125em !default; // ~18px
 $h-size-4: 1.0625em !default; // ~17px
 $h-size-5: 1.03125em !default; // ~16.5px
 $h-size-6: 1em !default; // ~16px
+
+/* Original usage of these size variables
+Size 1
+  page hero & overlay page title @x-large (breakpoint)
+  search-content.search-input @x-large (breakpoint)
+Size 2
+  page hero & overlay page title 
+  search-content.search-input @large (breakpoint)
+Size 3
+  search-content.serach-input
+Size 4
+   page.page__lead
+   x-large button
+Size 5
+   sidebar
+      author name 
+      author urls
+   archive
+      subtitle 
+      item title
+   large button
+Size 6
+   small fontsize (base, page)
+   figcaption
+   page
+      content.small
+      share title
+      meta, meta title
+      comments title
+      related title
+   archive
+      item-excerpt
+      grid__item.item-excerpt @ medium size (breakpoint)
+   sidebar : paragraph and list
+   footer follow line
+   button : default
+   forms small label
+   navigation
+      breadcrumbs.ol @x-large size (breakpoint)
+      nav list
+      nav sub title
+      toc nav title
+      toc menu @large size (breakpoint)
+   notice
+   search-content.results-found
+   footnotes, syntax highlighted code, tables
+Size 7
+   small button
+   footer copyright note
+   navigation toc menu (breakpoint large)
+   page hero caption
+Size 8
+   archive item caption
+   masthead site-subtitle
+*/
+
+
+// Original scaling scheme
+// /* type scale */
+// $type-size-1: 2.441em !default; // ~39.056px
+// $type-size-2: 1.953em !default; // ~31.248px
+// $type-size-3: 1.563em !default; // ~25.008px
+// $type-size-4: 1.25em !default; // ~20px
+// $type-size-5: 1em !default; // ~16px
+// $type-size-6: 0.75em !default; // ~12px
+// $type-size-7: 0.6875em !default; // ~11px
+// $type-size-8: 0.625em !default; // ~10px
+// /* headline scale */
+// $h-size-1: 1.563em !default; // ~25.008px
+// $h-size-2: 1.25em !default; // ~20px
+// $h-size-3: 1.125em !default; // ~18px
+// $h-size-4: 1.0625em !default; // ~17px
+// $h-size-5: 1.03125em !default; // ~16.5px
+// $h-size-6: 1em !default; // ~16px
 
 /*
    Colors
