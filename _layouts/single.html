@@ -45,6 +45,9 @@ layout: default
         {% if page.paperurl %}
           <a href=" {{ page.paperurl }} "><span><i class="fas fa-fw fa-file-pdf"></i> </span>Paper</a>
         {% endif %}
+        {% if page.collection == 'publications' %}
+          <a href=" {{ page.permalink }}.bib "><span><i class="fas fa-fw fa-file-alt"></i> </span>Bibtex</a>
+        {% endif %}
         {% if page.slides %}
           <a href=" {{ page.slides }} "><span><i class="fas fa-fw fa-file-powerpoint"></i> </span>Slides</a>
         {% endif %}

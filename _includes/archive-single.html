@@ -46,6 +46,9 @@
       {% if post.paperurl %}
         <a href=" {{ post.paperurl }} "><span><i class="fas fa-fw fa-file-pdf"></i> </span>Paper</a>
       {% endif %}
+      {% if post.collection == 'publications' %}
+        <a href=" {{ post.permalink }}.bib "><span><i class="fas fa-fw fa-file-alt"></i> </span>Bibtex</a>
+      {% endif %}
       {% if post.slides %}
         <a href=" {{ post.slides }} "><span><i class="fas fa-fw fa-file-powerpoint"></i> </span>Slides</a>
       {% endif %}
