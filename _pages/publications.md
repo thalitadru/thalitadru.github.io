@@ -28,7 +28,7 @@ You can find my articles on <u><a href="{{site.author.googlescholar}}">my Google
   {% endif%}
 {% endfor %}
 
-## Masters and PhD thesis
+## Master's and PhD thesis
 {% for post in site.publications reversed %}
   {% if post.venuetype == 'thesis' %}
     {% include archive-single.html %}
