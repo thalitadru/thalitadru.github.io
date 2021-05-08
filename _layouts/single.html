@@ -30,18 +30,18 @@ layout: default
         
         {% include page__meta.html %}
         
-        {% if page.collection == 'teaching' %}
+        <!-- {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
           <p>Published <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% endif %}
+        {% endif %} -->
         
              
         {% if page.citation %}
-          <p>Citation: {{ page.citation }} </p>
+          <span class="page__meta">Citation: {{ page.citation }} </span>
         {% endif %}
 
-        <p>
+        <!-- <p>
         {% if page.paperurl %}
           <a href=" {{ page.paperurl }} "><span><i class="fas fa-fw fa-file-pdf"></i> </span>Paper</a>
         {% endif %}
@@ -60,7 +60,7 @@ layout: default
         {% if page.code %}
           <a href=" {{ page.code }} "><span><i class="fas fa-fw fa-file-code"></i> </span>Code</a>
         {% endif %}
-        </p>
+        </p> -->
     
         </header>
       {% endunless %}

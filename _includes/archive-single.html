@@ -20,50 +20,54 @@
       </div>
     {% endif %}
     
-    <h4 class="archive__item-title no_toc" itemprop="headline">
+    <h3 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
-    </h4>
+    </h3>
     
     {% include page__meta.html type=include.type %}
 
-    <p class="archive__item-excerpt" itemprop="description">
-      {% if post.collection == 'teaching' %}
-        {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}<br>
-      {% elsif post.collection == 'publications' %}
-        <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}<br>
-      {% endif %}
+  
+    {% assign show_excerpt = ( include.show_excerpt | default:true ) and post.excerpt %}
 
-      {% if post.excerpt and site.read_more != 'enabled' %}
-        {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
-      {% elsif post.excerpt and site.read_more == 'enabled' %}
-        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong>
-      {% endif %}
-      
-      {% if post.paperurl %}
-        <a href=" {{ post.paperurl }} "><span><i class="fas fa-fw fa-file-pdf"></i> </span>Paper</a>
-      {% endif %}
-      {% if post.collection == 'publications' %}
-        <a href=" {{ post.permalink }}.bib "><span><i class="fas fa-fw fa-file-alt"></i> </span>Bibtex</a>
-      {% endif %}
-      {% if post.slides %}
-        <a href=" {{ post.slides }} "><span><i class="fas fa-fw fa-file-powerpoint"></i> </span>Slides</a>
-      {% endif %}
-      {% if post.poster %}
-        <a href=" {{ post.poster }} "><span><i class="fas fa-fw fa-image"></i> </span>Poster</a>
-      {% endif %}
-      {% if post.video %}
-        <a href=" {{ post.video }} "><span><i class="fas fa-fw fa-video"></i> </span>Video</a>
-      {% endif %}
-      {% if post.code %}
-        <a href=" {{ post.code }} "><span><i class="fas fa-fw fa-file-code"></i> </span>Code</a>
-      {% endif %}
-    </p>
+    {% if show_excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">
+        <!-- {% if post.collection == 'teaching' %}
+          {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}<br>
+        {% elsif post.collection == 'publications' %}
+          <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}<br>
+        {% endif %} -->
 
+        {% if post.excerpt and site.read_more != 'enabled' %}
+          {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+        {% elsif post.excerpt and site.read_more == 'enabled' %}
+          {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong>
+        {% endif %}
+        
+        <!-- {% if post.paperurl %}
+          <a href=" {{ post.paperurl }} "><span><i class="fas fa-fw fa-file-pdf"></i> </span>Paper</a>
+        {% endif %}
+        {% if post.collection == 'publications' %}
+          <a href=" {{ post.permalink }}.bib "><span><i class="fas fa-fw fa-file-alt"></i> </span>Bibtex</a>
+        {% endif %}
+        {% if post.slides %}
+          <a href=" {{ post.slides }} "><span><i class="fas fa-fw fa-file-powerpoint"></i> </span>Slides</a>
+        {% endif %}
+        {% if post.poster %}
+          <a href=" {{ post.poster }} "><span><i class="fas fa-fw fa-image"></i> </span>Poster</a>
+        {% endif %}
+        {% if post.video %}
+          <a href=" {{ post.video }} "><span><i class="fas fa-fw fa-video"></i> </span>Video</a>
+        {% endif %}
+        {% if post.code %}
+          <a href=" {{ post.code }} "><span><i class="fas fa-fw fa-file-code"></i> </span>Code</a>
+        {% endif %} -->
+      </p>
 
+    {% endif %}
 
 
     <!-- {% if post.citation %}
