@@ -1,8 +1,8 @@
 ---
-layout: archive
 title: "Publications"
+layout: collection
 permalink: /publications/
-author_profile: true
+author_profile: True
 excerpt: False
 ---
 
