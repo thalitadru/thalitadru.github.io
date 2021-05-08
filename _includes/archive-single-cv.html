@@ -12,31 +12,43 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+<div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li>
     {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
+    <div class="archive__item-teaser">
+      <img src="{{ teaser | relative_url }}" alt="">
+    </div>
+    {% endif %}
+    <div class="archive__item-title" itemprop="headline">
+      {% if post.date %}
+        <span class="archive__item-excerpt">
+          <i class="far fa-fw fa-calendar-alt"></i>
+          {% if post.collection == 'talks'%}
+            {{ post.date | date: '%Y, %b %d' }}
           {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+            {{ post.date | date: '%Y' }}
           {% endif %}
-          alt="">
-      </div>
-    {% endif %}
-    <h3 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        </span>
+        <i class="fas fa-fw fa-grip-lines-vertical"></i>
       {% endif %}
-    </h3>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
-    </li>
+
+      {% if post.link %}
+      <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+      <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </div>
+
+    <div class="archive__item-excerpt" itemprop="description">
+      {% if post.collection == 'publications' %}
+        Citation: {{ post.citation }}
+      {% elsif post.collection == 'teaching' or post.collection == 'talks' %}
+        {% if post.type %}{{post.type}}{% endif %}
+        {% if post.venue %}at {{ post.venue -}}{% endif %}
+        {% if post.location %},  {{post.location}}{% endif %}
+      {% else %}
+        {{post.excerpt}}
+      {% endif %}
+    </div>
  </article>
 </div>
