@@ -6,71 +6,73 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+sidebar:
+  - text: |
+      ##### CV in PDF
+      - [En une page (Français)](/files/cv_une_page_fr.pdf)
+      - [Single page (English)](/files/CV_EN_single.pdf)
+  # - title: "Degrees"
+  # - text: |
+  #     - PhD in Computer Science (*Informatique*), Université de Bordeaux, France, 2020
+  #     - MSc in Electrical Engineering, Sub-field Computer Engineering, Unicamp, Brazil, 2016
+  #     - BSc in Electrical Engineering, University of Campinas (Unicamp), Brazil, 2014
+  #     - Diplôme d'ingenieur (~MEng), Télécom Paristech, France, 2013
+  
+
 ---
 
 <!-- {% include base_path %} -->
 
-You can get one of my single-page CVs bellow:
+<!-- You can get one of my single-page CVs bellow:
 
 * [CV en une page (en français)](/files/cv_une_page_fr.pdf)
 * [One page CV (in english)](/files/CV_EN_single.pdf)
 
-Or you can check my [linkedin profile](https://www.linkedin.com/in/{{site.author.linkedin }}).
+Or you can check my [linkedin profile](https://www.linkedin.com/in/{{site.author.linkedin }}). -->
 
-Other than that, here goes a list of the activities I have registered here in this humble internet home.
-
-<!-- ### Teaching experience
-__Jan - Jun 2020__, __Attaché Temporaire d'Enseignement et Recherche (ATER)__, _Université de Bordeaux, France_  
-96h of teaching for computer science students (L1). Courses: Array algorithms, Intro to databases and web programming. Continuation of PhD research project.
-
-__2017, 2018__, __Doctorant Vactaire__, _Université de Bordeaux, France_
- - Lab sessions and excercises: Intro to algorithms and programing (40h), Intro to computer networks (20h). 
- - Lectures on artificial neural networks and deep learning for Cognitive Science MSc.(3h, 6h)
-
-### Research experience
-__2016 - 2020__, __PhD research project__, _INRIA Bordeaux Sud-ouest, France_  
-Working on improving data-efficiency of deep learning models in computer vision taking inspirations from the visual cortex. Engaged in science outreach activities. Advisors: Dr. Frederic Alexandre and Dr. Thierry Vieville.
-
-
-__2014 - 2016__, __MSc research project__, _FAPESP scholarship, Unicamp, Brazil_
-Highly selective scholarship. Advisor: Prof. Dr. Fernando J. Von Zuben. Research themes:
- - Ensemble for collaborative filtering using multiple random projections and Boolean matrix factorization.
- - Functional dynamic network representations of brain regions functional links using contiguous co-clustering.
-
-
-__2012 - 2013__, __Research internship__, _CEA, Gif-sur-Yvette, France_  
-Implementation of a co-emulation (hardware assisted verification) solution for the design of multi-core architectures. Development in VHDL and SystemC (C++ library).
-Supervisor: Dr. Caaliph Andriamisaina.
-
-
-__2009 - 2010__, __Undergrad research project__, _FAPESP scholarship, Unicamp_
-Study and implementation of color and shape descriptors for content-based image retrieval systems. Basic experience with image processing, C++ and Qt GUI API. Supervisor: Prof. Dr. Léo Pini Magalhães. -->
+<!-- Other than that, here goes a list of the activities I have registered here in this website. -->
 
 ## Degrees
-* PhD in Computer Science (*Informatique*), University of Bordeaux, France, 2020
+* PhD in Computer Science (*Informatique*), Université de Bordeaux, France, 2020
 * MSc in Electrical Engineering, Sub-field Computer Engineering, Unicamp, Brazil, 2016
 * BSc in Electrical Engineering, University of Campinas (Unicamp), Brazil, 2014
 * *Diplôme d'ingenieur* (~MEng), Télécom Paristech, France, 2013
 
-
+## Employment
+* Jan - Jun 2020: Temporary professor (ATER), Université de Bordeaux, France
+* 2016 - 2020: Doctoral research contract, Mnemosyne Project-Team, Inria Bordeaux Sud-Ouest, France
+* 2017 - 2019: Doctoral teaching assistant, Université de Bordeaux, France
+* 2014 - 2016: Master's research contract, [FAPESP](https://fapesp.br/en/about) and University of Campinas, Brazil
+* Aug 2012 - Jan 2013: Engineering Internship, [CEA LIST](http://www-list.cea.fr/en/discover-cea-list/qui-sommes-nous/overview), Gif-sur-Yvette, France
 
 ## Projects
-  <ul>{% for post in site.projects reversed %}
+  {% for post in site.projects reversed limit:3 %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul> 
+  {% endfor %}
+  
+
+[View more](/projects)
 
 ## Teaching
-  <ul>{% for post in site.teaching reversed%}
+  {% for post in site.teaching reversed limit:3%}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>  
+  {% endfor %}
+
+
+[View more](/teaching)
 
 ## Publications
-  <ul>{% for post in site.publications reversed%}
+  {% for post in site.publications reversed limit:3%}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul> 
+  {% endfor %}
+
+
+[View more](/publications)
 
 ## Talks
-  <ul>{% for post in site.talks reversed%}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+  {% for post in site.talks reversed limit:3%}
+    {% include archive-single-cv.html %}
+  {% endfor %}
 
+
+[View more](/talks)
