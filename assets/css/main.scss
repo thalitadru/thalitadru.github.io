@@ -14,7 +14,6 @@
     .author__avatar {
 
         img {
-
             @include breakpoint($large) {
                 max-width: 85px;
             }
@@ -25,9 +24,9 @@
     }
 
     .author__content {
-
         @include breakpoint($large) {
             padding: 0;
+            // margin-bottom: 50px;
         }
     }
 
@@ -38,8 +37,10 @@
         }
     }
     .sidebar .author__name {
-        font-size: $type-size-6;
-      }
+        @include breakpoint($large) {
+            font-size: $type-size-6;
+        }
+    }
     .author__bio {
 
         @include breakpoint($large) {
@@ -50,11 +51,13 @@
     .author__urls-wrapper {
 
         @include breakpoint($large) {
-            display: block;
+            display: table-cell;
         }
 
         button {
-            display: inherit;
+            @include breakpoint($large) {
+                display: inherit;
+            }
         }
     }
     .author__urls {
@@ -62,8 +65,8 @@
         @include breakpoint($large) {
             display: none;
             position: absolute;
-            left: 25px;
-            right: 0;
+            right: auto;
+            left: 0;
             margin-top: 15px;
             padding: 10px;
             border: 1px solid $border-color;
@@ -72,10 +75,20 @@
             cursor: default;
         }
         @include breakpoint($x-large) {
-            margin-left: 10px;
-            margin-right: 70px;
+            // margin-left: 10px;
+            // margin-right: 10px;
         }
-        &:before &:after {
+        &.is--visible {
+            @include breakpoint($large) {
+                display: block;
+            }
+        }
+        &:before {
+            @include breakpoint($large) {
+                display: block;
+            }
+        }
+        &:after {
             @include breakpoint($large) {
                 display: block;
             }
