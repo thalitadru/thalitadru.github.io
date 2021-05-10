@@ -8,9 +8,9 @@ redirect_from:
   - /resume
 sidebar:
   - text: |
-      ##### CV in PDF
-      - [En une page (Français)](/files/cv_une_page_fr.pdf)
-      - [Single page (English)](/files/CV_EN_single.pdf)
+      ##### Download my CV here
+      - [Français](/files/cv_une_page_fr.pdf)
+      - [English](/files/CV_EN_single.pdf)
   # - title: "Degrees"
   # - text: |
   #     - PhD in Computer Science (*Informatique*), Université de Bordeaux, France, 2020
