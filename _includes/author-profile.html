@@ -2,7 +2,7 @@
 {% assign author = site.data.authors[author] | default: author %}
 {% assign compact_profile = page.sidebar | default: false%}
 
-<div itemscope itemtype="https://schema.org/Person">
+<div itemscope itemtype="https://schema.org/Person" {% if compact_profile %}class="author__compact" {% endif %}>
 
   {% if author.avatar %}
     <div class="author__avatar">
@@ -30,14 +30,13 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].contact_label | remove: ":" | default: "Contact" }}</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
           <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
         </li>
       {% endif %}
-
 
       {% if author.email %}
         <li>
@@ -66,7 +65,6 @@
         </li>
       {% endif %}
 
-      {% if compact_profile == false %}
         <!-- Code repo links -->
 
         {% if author.github %}
@@ -282,7 +280,7 @@
             {% endif %}
           {% endfor %}
         {% endif %}    
-      {% endif %}
-    </ul>
-  </div>
+      </ul>
+    </div>
+
 </div>

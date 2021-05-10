@@ -3,7 +3,83 @@
 ---
 
 @charset "utf-8";
-// must delcare skin import before main theme import
+// must declare skin import before main theme import
 // see https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Custom css
+.author__compact{
+
+    .author__avatar {
+
+        img {
+
+            @include breakpoint($large) {
+                max-width: 85px;
+            }
+            @include breakpoint($x-large) {
+                max-width: 95px;
+            }
+        }
+    }
+
+    .author__content {
+
+        @include breakpoint($large) {
+            padding: 0;
+        }
+    }
+
+    .author__name {
+        @include breakpoint($large) {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+    .sidebar .author__name {
+        font-size: $type-size-6;
+      }
+    .author__bio {
+
+        @include breakpoint($large) {
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    }
+    .author__urls-wrapper {
+
+        @include breakpoint($large) {
+            display: block;
+        }
+
+        button {
+            display: inherit;
+        }
+    }
+    .author__urls {
+
+        @include breakpoint($large) {
+            display: none;
+            position: absolute;
+            left: 25px;
+            right: 0;
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid $border-color;
+            background: $background-color;
+            box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
+            cursor: default;
+        }
+        @include breakpoint($x-large) {
+            margin-left: 10px;
+            margin-right: 70px;
+        }
+        &:before &:after {
+            @include breakpoint($large) {
+                display: block;
+            }
+        }
+
+    }
+}
