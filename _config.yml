@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Thalita Drumond's webpage"
 title_separator          : "|"
 name                     : &name "Thalita Drumond"
-description              : &description "Thalita Drumond's personal webpage"
+description              : &description "Thalita Drumond's webpage"
 url                      : "https://thalitadru.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "thalitadru/thalitadru.github.io"
@@ -320,7 +320,12 @@ collections:
   posts:
     output: true
     permalink: /:collection/:path/
-
+  jobs:
+    output: false
+    permalink: "/cv/#:path"
+  degrees:
+    output: false
+    permalink: "/cv/#:path"
 
 # Defaults
 defaults:
