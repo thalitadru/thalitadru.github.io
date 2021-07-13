@@ -28,6 +28,9 @@
           {% else %}
             {{ post.date | date: '%Y' }}
           {% endif %}
+          {% if post.enddate%}
+            - {{ post.enddate | date: '%Y'}}
+          {% endif%}
         </span>
         <i class="fas fa-fw fa-grip-lines-vertical"></i>
       {% endif %}
@@ -42,7 +45,7 @@
     <div class="archive__item-excerpt" itemprop="description">
       {% if post.collection == 'publications' %}
         Citation: {{ post.citation }}
-      {% elsif post.collection == 'teaching' or post.collection == 'talks' %}
+      {% elsif post.venue %}
         {% if post.type %}{{post.type}}{% endif %}
         {% if post.venue %}at {{ post.venue -}}{% endif %}
         {% if post.location %},  {{post.location}}{% endif %}
